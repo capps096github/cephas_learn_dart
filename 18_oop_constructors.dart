@@ -27,23 +27,16 @@ void main() {
 
   // print details
   originalShirt.printDetails();
-}
 
-displayPerson(Person p) {
-  print("\n==============");
-  print("FIRST NAME: ${p.first_name}");
-  print("LAST NAME: ${p.last_name}");
-  print("COUNTRY: ${p.country}");
-}
 
-class Person {
-  String first_name = "";
-  String last_name = "";
-  String country = "";
+  // constructor without named parameters
+  //4) create a navy blue Calcut Shirt with size M and price 2000
+  CalcutShirt navyBlueShirt2 = CalcutShirt.withoutNamedParameters(
+    "Navy Blue",
+    "M",
+    2000,
+  );
 
-  Person() {
-    this.first_name = "No first name";
-    this.last_name = "No last name";
-    this.country = "-";
-  }
+  // print details
+  navyBlueShirt2.printDetails();
 }
